@@ -21,15 +21,15 @@ We have three types of ways you can produce recombinant, phosphoprotein using SI
 ## What does the kit contain? 
 ### Kinases
 We have provided 9 kVh-vectors, SH3-fused tyrosine kinases from a wide variety of specifciities that express and perform well in recombinant E. coli systems. All kinases span the catalytic domain only, unless otherwise noted. The kVh system is a highly modified pBAD backbone, retaining L-arabinose based control of kinase induction, but with alternate origins of replication (p15a) and resistance selection (kanamycin), allowing them to be compatible with the substrate vector. These kinases include:
-* kVh-ABL (Addgene ID 259379)
-* kVh-EPHB1 (Addgene ID 259380)
-* kVh-EPHB2 (Addgene ID 259381)
-* kVh-FES (Addgene ID 259382)
-* kVh-FGFR3 (Addgene ID 259383)
-* kVh-MERTK (Addgene ID 259384)
-* kVh-EPHA4 (Addgene ID 259386)
-* kVh-LYN (contains LYN SH2 domain)
-* kVh-SRC (contains SRC SH2 domain)
+* [kVh-ABL (Addgene ID 259379)](https://www.addgene.org/259379/)
+* [kVh-EPHB1 (Addgene ID 259380)](https://www.addgene.org/259380/)
+* [kVh-EPHB2 (Addgene ID 259381)](https://www.addgene.org/259381/)
+* [kVh-FES (Addgene ID 259382)](https://www.addgene.org/259382/)
+* [kVh-FGFR3 (Addgene ID 259383)](https://www.addgene.org/259383/)
+* [kVh-MERTK (Addgene ID 259384)](https://www.addgene.org/259384/)
+* [kVh-EPHA4 (Addgene ID 259386)](https://www.addgene.org/259386)
+* [kVh-LYN (contains LYN SH2 domain) Addgene ID 259385](https://www.addgene.org/259385/)
+* [kVh-SRC (contains SRC SH2 domain) Addgene ID 259387](https://www.addgene.org/259387/)
 
 ### [Substrate vectors](SubstrateVectors.md)
 We have made a variety of substrate vectors that provide the opportunity to use different fusions for the purpose of solubility, detection, purfication, or other purposes. All substrate vectors have induction control under lac-control (lactose/IPTG). We have two main substrate backbones in the toolkit, sVd - a highly modified pGEX (GST removed, and a tyrosine-free yeast sumo domain added for solubility) and a pET vector. All substrates include a MYC epitope and multi-His fusion for detection and purification and at least one version of a targeting sequence. Please note that your sequence may behave differently for production purposes, so we recommend cloning into a couple of substrate vectors to find the vector that is right for your sequence. 
@@ -44,19 +44,19 @@ Binding affinity provided based on publication from [Pisabarro et al., JMB 1998]
 
 |Addgene ID|Name|Selection|Backbone|Insert|N-terminal Fusion|C-terminal Fusion|5' Restriction Site|3' Restriction Site|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|259395|[pETHF-PD1_Y223](Plasmid_files/substrates/pETHF-PD1_Y223.dna)|amp|pET|PD1 Y223 peptide|Halo(mod)-p40F-ABLmlinker|Fh8-StrepTagII-Myc-6xHis|EcoRI/BamHI|SacI/SacII/HindIII|
-|259393|[pETHG-PD1_Y223](Plasmid_files/substrates/pETHG-PD1_Y223.dna)|amp|pET|PD1 Y223 peptide|Halo(mod)-p40F-ABLmlinker|GB1-StrepTagII-Myc-6xHis|EcoRI/BamHI|SacI/SacII/HindIII|
-|259394|[pETSF-PD1_Y248](Plasmid_files/substrates/pETSF-PD1_Y248.dna) |amp|pET|PD1 Y248 peptide|SUMO2m-p40F-Linker2-p40F|Fh8-StrepTagII-Myc-6xHis|EcoRI/BamHI|SacI/SacII/HindIII|
-|259396|[pETSG-PD1_Y248](Plasmid_files/substrates/pETSG-PD1_Y248.dna)|amp|pET|PD1 Y248 peptide|SUMO2m-p40F-Linker2-p40F|GB1-StrepTagII-Myc-6xHis|EcoRI/BamHI|SacI/SacII/HindIII|
-|259388|[sVd-EGFRCtail](Plasmid_files/substrates/sVd-EGFRCtail.dna)|amp|sVd (pGEX mod)|EGFR Ctail|msmt3-p40|Myc-6xHis|BamHI/HindIII|SacII/SalI/XhoI/NotI|
-|259400|[sVdAlfa-PTPN11_NSH2](Plasmid_files/substrates/sVdAlfa-PTPN11_NSH2.dna)|amp|sVd (pGEX mod)|PTPN11 N_SH2|msmt3-p40-ALFATag|Myc-6xHis|BamHI|SacII|
-|259390|[sVdAvi-GAB1](Plasmid_files/substrates/sVdAvi-GAB1.dna)|amp|sVd (pGEX mod)|GAB1 Y627/Y659|msmt3-p40|AviTag-Myc-6xHis|BamHI|SacII/SalI/XhoI/NotI|
-|259391|[sVdAviW-GAB1](Plasmid_files/substrates/sVdAviW-GAB1.dna)|amp|sVd (pGEX mod)|GAB1 Y627/Y659|msmt3-p40W|AviTag-Myc-6xHis|BamHI|SacII/SalI/XhoI/NotI|
-|259392|[sVdpep-EGFR_ Y1172](Plasmid_files/substrates/sVdpep-EGFR_%20Y1172.dna)|amp|sVd (pGEX mod)|EGFR Y1172 21mer peptide|msmt3-p40W-GlyLinker|mutatedGST-Myc-6xHis|BamHI|SacI|
-|259389|[sVdW-EGFRCtail](Plasmid_files/substrates/sVdW-EGFRCtail.dna)|amp|sVd (pGEX mod)|EGFR Ctail|msmt3-p40W|Myc-6xHis|BamHI|SacII/XbaI|
-|259397|[sVf-PTPN11_NSH2](Plasmid_files/substrates/sVf-PTPN11_NSH2.dna)|amp|sVd (pGEX mod)|PTPN11 N_SH2|10xHis-msmt3|Myc-KExLinker-p40W|BamHI|SacII |
-|259398|[sVfAvi-PTPN11_NSH2](Plasmid_files/substrates/sVfAvi-PTPN11_NSH2.dna)|amp|sVd (pGEX mod)|PTPN11 N_SH2|10xHis-msmt3-p40W-KExLinker|Myc-KExLinker-AviTag|BamHI|SacII/NheI|
-|259399|[sVfAviWW-PTPN11_NSH2](Plasmid_files/substrates/sVfAviWW-PTPN11_NSH2.dna)|amp|sVd (pGEX mod)|PTPN11 N_SH2|10xHis-msmt3-p40W-KExLinker|Myc-KExLinker-p40W-AviTag|BamHI|SacII/NheI|
+|[259395](https://www.addgene.org/259395/)|[pETHF-PD1_Y223](Plasmid_files/substrates/pETHF-PD1_Y223.dna)|amp|pET|PD1 Y223 peptide|Halo(mod)-p40F-ABLmlinker|Fh8-StrepTagII-Myc-6xHis|EcoRI/BamHI|SacI/SacII/HindIII|
+|[259393](https://www.addgene.org/259393)/|[pETHG-PD1_Y223](Plasmid_files/substrates/pETHG-PD1_Y223.dna)|amp|pET|PD1 Y223 peptide|Halo(mod)-p40F-ABLmlinker|GB1-StrepTagII-Myc-6xHis|EcoRI/BamHI|SacI/SacII/HindIII|
+|[259394](https://www.addgene.org/259394)/|[pETSF-PD1_Y248](Plasmid_files/substrates/pETSF-PD1_Y248.dna) |amp|pET|PD1 Y248 peptide|SUMO2m-p40F-Linker2-p40F|Fh8-StrepTagII-Myc-6xHis|EcoRI/BamHI|SacI/SacII/HindIII|
+|[259396](https://www.addgene.org/259396)/|[pETSG-PD1_Y248](Plasmid_files/substrates/pETSG-PD1_Y248.dna)|amp|pET|PD1 Y248 peptide|SUMO2m-p40F-Linker2-p40F|GB1-StrepTagII-Myc-6xHis|EcoRI/BamHI|SacI/SacII/HindIII|
+|[259388](https://www.addgene.org/259388)/|[sVd-EGFRCtail](Plasmid_files/substrates/sVd-EGFRCtail.dna)|amp|sVd (pGEX mod)|EGFR Ctail|msmt3-p40|Myc-6xHis|BamHI/HindIII|SacII/SalI/XhoI/NotI|
+|[259400](https://www.addgene.org/259400)/|[sVdAlfa-PTPN11_NSH2](Plasmid_files/substrates/sVdAlfa-PTPN11_NSH2.dna)|amp|sVd (pGEX mod)|PTPN11 N_SH2|msmt3-p40-ALFATag|Myc-6xHis|BamHI|SacII|
+|[259390](https://www.addgene.org/259390)/|[sVdAvi-GAB1](Plasmid_files/substrates/sVdAvi-GAB1.dna)|amp|sVd (pGEX mod)|GAB1 Y627/Y659|msmt3-p40|AviTag-Myc-6xHis|BamHI|SacII/SalI/XhoI/NotI|
+|[259391](https://www.addgene.org/259391)/|[sVdAviW-GAB1](Plasmid_files/substrates/sVdAviW-GAB1.dna)|amp|sVd (pGEX mod)|GAB1 Y627/Y659|msmt3-p40W|AviTag-Myc-6xHis|BamHI|SacII/SalI/XhoI/NotI|
+|[259392](https://www.addgene.org/259392)/|[sVdpep-EGFR_ Y1172](Plasmid_files/substrates/sVdpep-EGFR_%20Y1172.dna)|amp|sVd (pGEX mod)|EGFR Y1172 21mer peptide|msmt3-p40W-GlyLinker|mutatedGST-Myc-6xHis|BamHI|SacI|
+|[259389](https://www.addgene.org/259389)/|[sVdW-EGFRCtail](Plasmid_files/substrates/sVdW-EGFRCtail.dna)|amp|sVd (pGEX mod)|EGFR Ctail|msmt3-p40W|Myc-6xHis|BamHI|SacII/XbaI|
+|[259397](https://www.addgene.org/259397)/|[sVf-PTPN11_NSH2](Plasmid_files/substrates/sVf-PTPN11_NSH2.dna)|amp|sVd (pGEX mod)|PTPN11 N_SH2|10xHis-msmt3|Myc-KExLinker-p40W|BamHI|SacII |
+|[259398](https://www.addgene.org/259398)/|[sVfAvi-PTPN11_NSH2](Plasmid_files/substrates/sVfAvi-PTPN11_NSH2.dna)|amp|sVd (pGEX mod)|PTPN11 N_SH2|10xHis-msmt3-p40W-KExLinker|Myc-KExLinker-AviTag|BamHI|SacII/NheI|
+|[259399](https://www.addgene.org/259399)/|[sVfAviWW-PTPN11_NSH2](Plasmid_files/substrates/sVfAviWW-PTPN11_NSH2.dna)|amp|sVd (pGEX mod)|PTPN11 N_SH2|10xHis-msmt3-p40W-KExLinker|Myc-KExLinker-p40W-AviTag|BamHI|SacII/NheI|
 
 
 #### Tag definitions

@@ -1,4 +1,6 @@
 # Substrate Vector Maps
+Plasmid maps can be found on Addgene and in this repository under Plasmid_files/substrates
+
 
 ## pET based vectors
 These vectors contain options for different solubility and production tags
