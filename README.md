@@ -31,7 +31,7 @@ We have provided 9 kVh-vectors, SH3-fused tyrosine kinases from a wide variety o
 * kVh-LYN (contains LYN SH2 domain)
 * kVh-SRC (contains SRC SH2 domain)
 
-### Substrate vectors
+### [Substrate vectors](SubstrateVectors.md)
 We have made a variety of substrate vectors that provide the opportunity to use different fusions for the purpose of solubility, detection, purfication, or other purposes. All substrate vectors have induction control under lac-control (lactose/IPTG). We have two main substrate backbones in the toolkit, sVd - a highly modified pGEX (GST removed, and a tyrosine-free yeast sumo domain added for solubility) and a pET vector. All substrates include a MYC epitope and multi-His fusion for detection and purification and at least one version of a targeting sequence. Please note that your sequence may behave differently for production purposes, so we recommend cloning into a couple of substrate vectors to find the vector that is right for your sequence. 
 
 #### Polyproline sequences defined
