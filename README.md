@@ -5,12 +5,12 @@ SISA-KiT (Signaling Inspired Synthetically Augmented Kinase Toolkit) is an appro
 
 SISA-KiT requires two vectors, engineered to be co-transformed, independently selected, and independently induced in E. coli production systems. In theory, you can move the domain-enzyme fusion and motif-substrate components to any expression system! However, since E. Coli produces a large amount of protein very easily, all our documentation and vectors are currently focused on those systems. 
 
-In the current SISA-KiT, targeting of the kinase to a substrate occurs between an SH3 domain (from ABL) and a polyproline sequence that SH3 domain recognizes. You can change the targeting strength by selecting a different polyproline sequence.
+In the current SISA-KiT, targeting of the kinase to a substrate occurs between an SH3 domain (from ABL) and a polyproline sequence that SH3 domain recognizes. 
 
 ![SISA-KiT two-vector system](Images/vectors_overview_rx.png)
 
 ## How do I get started use SISA-KiT for making phosphoproteins?
-It's very easy to get started! Our substrate vectors contain common cloning restriction sites and you select your vector(s), clone your substrate, screen for well performing reaction kinases, and optimize for specific product yield (including reaction types).
+It's very easy to get started! Our substrate vectors contain common cloning restriction sites and you select your vector(s), clone your substrate, screen for well performing reaction kinases, and optimize for specific product yield (including reaction types). You can order a starter kit of kinases and substrate vectors (14 total plasmids and additional substrate vectors from Addgene). Link pending. 
 
 ## What does a reaction look like in SISA-KiT?
 We have three types of ways you can produce recombinant, phosphoprotein using SISA-KIT. These are referred to as co-expression, serial induction, and in vitro reactions. Where possible, we recommend using co-expression (simultaneously induce the substrate and kinase) which tends to produce larger yields of both protein and phosphoprotein. If you require phosphorylation occur after protein folding has occurred, you can use serial induction -- produce the subsrate protein first and then turn on the kinase. Finally, if you wish to couple kinases or move outside an E. coli system, you can use an in vitro approach -- make the substrate protein on its own and during the process of purification, resuspend the beads/matrix in kinase-expressing E. coli lysate supplemented in a magnesium- and ATP-rich buffer, then continue washing and elution as usual. 
@@ -21,49 +21,43 @@ We have three types of ways you can produce recombinant, phosphoprotein using SI
 ## What does the kit contain? 
 ### Kinases
 We have provided 9 kVh-vectors, SH3-fused tyrosine kinases from a wide variety of specifciities that express and perform well in recombinant E. coli systems. All kinases span the catalytic domain only, unless otherwise noted. The kVh system is a highly modified pBAD backbone, retaining L-arabinose based control of kinase induction, but with alternate origins of replication (p15a) and resistance selection (kanamycin), allowing them to be compatible with the substrate vector. These kinases include:
-* kVh-ABL
-* kVh-EPHB1
-* kVh-EPHB2
-* kVh-FES
-* kVh-FGFR3
-* kVh-MERTK
-* kVh-EPHA4
+* kVh-ABL (Addgene ID 259379)
+* kVh-EPHB1 (Addgene ID 259380)
+* kVh-EPHB2 (Addgene ID 259381)
+* kVh-FES (Addgene ID 259382)
+* kVh-FGFR3 (Addgene ID 259383)
+* kVh-MERTK (Addgene ID 259384)
+* kVh-EPHA4 (Addgene ID 259386)
 * kVh-LYN (contains LYN SH2 domain)
 * kVh-SRC (contains SRC SH2 domain)
 
 ### Substrate vectors
-We have made a variety of substrate vectors that provide the opportunity to use different fusions for the purpose of solubility, detection, purfication, or other purposes. All substrate vectors have induction control under lac-control (lactose/IPTG). We have two main substrate backbones in the toolkit, sVd - a highly modified pGEX (GST removed, and a tyrosine-free yeast sumo domain added for solubility) and a pET vector. All substrates include a C-terminal MYC and 6xHis fusion for detection and purification and at least one version of a targeting sequence. 
+We have made a variety of substrate vectors that provide the opportunity to use different fusions for the purpose of solubility, detection, purfication, or other purposes. All substrate vectors have induction control under lac-control (lactose/IPTG). We have two main substrate backbones in the toolkit, sVd - a highly modified pGEX (GST removed, and a tyrosine-free yeast sumo domain added for solubility) and a pET vector. All substrates include a MYC epitope and multi-His fusion for detection and purification and at least one version of a targeting sequence. Please note that your sequence may behave differently for production purposes, so we recommend cloning into a couple of substrate vectors to find the vector that is right for your sequence. 
 
 #### Polyproline sequences defined
 Binding affinity provided based on publication from [Pisabarro et al., JMB 1998](https://pubmed.ncbi.nlm.nih.gov/9698566/)
-* no PxxP - there is no targeting sequence
-* 3BP1: APTMPPPLPP (34 &mu;M)
-* 3BP2: PPAYPPPPVP (5 &mu;M)
-* p41:  APSYSPPPPP (1.5 &mu;M)
 * p40:  APTYSPPPPP (0.4 &mu;M)
 * p40F: APTFSPPPPP (p40 with tyrosine to phenylalanine mutation)
 * p40W: APTWSPPPPP (p40 with tyrosine to tryptophan mutation)
 
 #### Substrate vector options
-* sVd
-* sVd-Avi
-* sVd-ALFA
-* sVd-mGST
-* pET-Halo-GB1
-* pET-SUMO-Fh8
-* pET-Halo-Fh8
-* pET-SUMO-GB1
 
-| Substrate vector | N-terminal fusions | C-terminal fusions | Cleavage sites | 5' restriction sites | 3' restriction sites | Targeting options |
-| --- | --- | --- | --- | --- | --- | --- |
-| sVd | msmt3-PxxP | MYC, 6xHis | Prescission (after targeting sequence) | BamHI/HindIII | SacII/SalI/XhoI/NotI | No PxxP, 3BP1, 3BP2, p41, p40, p40W |
-| sVd-Avi | msmt3-PxxP | AviTag, MYC, 6xHis | Prescission (after targeting sequence) | BamHI | SacII/SalI/XhoI/NotI | p40, p40W |
-| sVd-ALFA | ALFA-tag | MYC, 6xHis | TBD | TBD | TBD | p40W |
-| sVd-mGST | msmt3-PxxP-Gly linker | GSTm, MYC, 6xHis | TBD | BamHI/AflII | Eco53kI/SacI | p40, p40W |
-| pET-Halo-GB1 | HaloTag-PxxP | GB1, MYC, 6xHis | Prescission (after targeting sequence) | EcoRI/BamHI | SacI/SacII/HindIII | p40F |
-| pET-SUMO-Fh8 | SUMO-PxxP | Fh8, MYC, 6xHis | Prescission (after targeting sequence) | EcoRI/BamHI | SacI/SacII/HindIII | p40F |
-| pET-Halo-Fh8 | HaloTag-PxxP | Fh8, MYC, 6xHis | Prescission (after targeting sequence) | EcoRI/BamHI | SacI/SacII/HindIII | p40F |
-| pET-SUMO-GB1 | SUMO-PxxP | GB1, MYC, 6xHis | Prescission (after targeting sequence) | EcoRI/BamHI | SacI/SacII/HindIII | p40F |
+|Addgene ID|Name|Selection|Backbone|Insert|N-terminal Fusion|C-terminal Fusion|5' Restriction Site|3' Restriction Site|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|259395|pETHF-PD1_Y223|amp|pET|PD1 Y223 peptide|Halo(mod)-p40F-ABLmlinker|Fh8-StrepTagII-Myc-6xHis|EcoRI/BamHI|SacI/SacII/HindIII|
+|259393|pETHG-PD1_Y223|amp|pET|PD1 Y223 peptide|Halo(mod)-p40F-ABLmlinker|GB1-StrepTagII-Myc-6xHis|EcoRI/BamHI|SacI/SacII/HindIII|
+|259394|pETSF-PD1_Y248|amp|pET|PD1 Y248 peptide|SUMO2m-p40F-Linker2-p40F|Fh8-StrepTagII-Myc-6xHis|EcoRI/BamHI|SacI/SacII/HindIII|
+|259396|pETSG-PD1_Y248|amp|pET|PD1 Y248 peptide|SUMO2m-p40F-Linker2-p40F|GB1-StrepTagII-Myc-6xHis|EcoRI/BamHI|SacI/SacII/HindIII|
+|259388|sVd-EGFRCtail|amp|sVd (pGEX mod)|EGFR Ctail|msmt3-p40|Myc-6xHis|BamHI/HindIII|SacII/SalI/XhoI/NotI|
+|259400|sVdAlfa-PTPN11_NSH2|amp|sVd (pGEX mod)|PTPN11 N_SH2|msmt3-p40-ALFATag|Myc-6xHis|BamHI|SacII|
+|259390|sVdAvi-GAB1|amp|sVd (pGEX mod)|GAB1 Y627/Y659|msmt3-p40|AviTag-Myc-6xHis|BamHI|SacII/SalI/XhoI/NotI|
+|259391|sVdAviW-GAB1|amp|sVd (pGEX mod)|GAB1 Y627/Y659|msmt3-p40W|AviTag-Myc-6xHis|BamHI|SacII/SalI/XhoI/NotI|
+|259392|sVdpep-EGFR_ Y1172|amp|sVd (pGEX mod)|EGFR Y1172 21mer peptide|msmt3-p40W-GlyLinker|mutatedGST-Myc-6xHis|BamHI|SacI|
+|259389|sVdW-EGFRCtail|amp|sVd (pGEX mod)|EGFR Ctail|msmt3-p40W|Myc-6xHis|BamHI|SacII/XbaI|
+|259397|sVf-PTPN11_NSH2|amp|sVd (pGEX mod)|PTPN11 N_SH2|10xHis-msmt3|Myc-KExLinker-p40W|BamHI|SacII |
+|259398|sVfAvi-PTPN11_NSH2|amp|sVd (pGEX mod)|PTPN11 N_SH2|10xHis-msmt3-p40W-KExLinker|Myc-KExLinker-AviTag|BamHI|SacII/NheI|
+|259399|sVfAviWW-PTPN11_NSH2|amp|sVd (pGEX mod)|PTPN11 N_SH2|10xHis-msmt3-p40W-KExLinker|Myc-KExLinker-p40W-AviTag|BamHI|SacII/NheI|
+
 
 #### Tag definitions
 For use in SISA-KiT we use tags, fusions, and components that are tyrosine free. We do this by selecting sequences with low to no tyrosines and replace tyrosines with non-phosphorylatable matches to phenylalanines. 
@@ -71,7 +65,8 @@ For use in SISA-KiT we use tags, fusions, and components that are tyrosine free.
 * msmt3 - the yeast sumo domain (smt3) where we have mutated all tyrosines to phenylalanines
 * MYC - an epitope for detection (EQKLISEEDL) 
 * 6xHis - a repeat of 6 histidines for use in purification using metal affinity chromotography.
-* GSTm - the GST tag where all tyrosines are mutated to phenylalanines. This tag is used as an inert fusion to increase size for peptide vectors. GSTm does not work for puriciation. DNA was codon optimized for E. coli expression.
+* 10xHis - a repeat of 10 histidines for use in purification using metal affinity chromotograph, allows for increased stringency, compared to 6xHis.
+* mutated GST (or GSTm) - the GST tag where all tyrosines are mutated to phenylalanines. This tag is used as an inert fusion to increase size for peptide vectors. GSTm does not work for puriciation. DNA was codon optimized for E. coli expression.
 * ALFA-tag - 15 amino acid epitope tag that forms a stable alpha-helix for use in tagging, purification, or detection. The sequence is SRLEEELRRRLTE, DNA was codon optimized for expression in E. coli
 * Halo-tag - the 33kDa Halo tag, used for protein labeling. 
 * AviTag - for biotinylation, this 15 amino acid sequence (GLNDIFEAQKIEWHE) is selected by BirA ligase for site-specific biotinylation. 
