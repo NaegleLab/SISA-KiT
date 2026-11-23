@@ -68,7 +68,7 @@ For use in SISA-KiT we use tags, fusions, and components that are tyrosine free.
 * 10xHis - a repeat of 10 histidines for use in purification using metal affinity chromotograph, allows for increased stringency, compared to 6xHis.
 * mutated GST (or GSTm) - the GST tag where all tyrosines are mutated to phenylalanines. This tag is used as an inert fusion to increase size for peptide vectors. GSTm does not work for puriciation. DNA was codon optimized for E. coli expression.
 * ALFA-tag - 15 amino acid epitope tag that forms a stable alpha-helix for use in tagging, purification, or detection. The sequence is SRLEEELRRRLTE, DNA was codon optimized for expression in E. coli
-* Halo-tag - the 33kDa Halo tag, used for protein labeling. 
+* Halo-tag - the 33kDa Halo tag, a strong solubilizing fusion, used for protein labeling. We codon optimized and mutated 6 tyrosines to phenylalanine.
 * AviTag - for biotinylation, this 15 amino acid sequence (GLNDIFEAQKIEWHE) is selected by BirA ligase for site-specific biotinylation. 
 * SUMO - this is the human SUMO2 sequence, where the two tyrosines are mutated to phenylalanines and the codons were optimized for E. coli production.
 * Fh8 - for solubility, this sequence is: MPSVQEVEKLLHVLDRNGDGKVSAEELKAFADDSKCPLDSNKIKAFIKEHDKNKDGKLDLKELVSILSS. DNA was codon optimized for E. coli expression.
